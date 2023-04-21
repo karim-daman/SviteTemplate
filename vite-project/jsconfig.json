@@ -24,7 +24,7 @@
      * Disable this if you'd like to use dynamic types.
      */
      "checkJs": true,
-     "baseUrl": ".",
+     "baseUrl": "./",
      "paths": {
        "$lib/*": ["src/lib/*"],
        "$utils/*": ["src/utils/*"],
