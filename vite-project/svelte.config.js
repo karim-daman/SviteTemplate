@@ -1,7 +1,17 @@
-import { vitePreprocess } from '@sveltejs/vite-plugin-svelte'
+import { defineConfig } from "vite";
+import { svelte } from "@sveltejs/vite-plugin-svelte";
+import path from "path";
 
-export default {
-  // Consult https://svelte.dev/docs#compile-time-svelte-preprocess
-  // for more information about preprocessors
-  preprocess: vitePreprocess(),
-}
+// vite.config.js
+export default defineConfig({
+  plugins: [svelte()],
+  resolve: {
+    alias: {
+      $lib: path.resolve("./src/lib"),
+      $utils: path.resolve("./src/utils"),
+      $stores: path.resolve("./src/stores"),
+      $assets: path.resolve("./src/assets"),
+      $icons: path.resolve("./public/icons"),
+    },
+  },
+});

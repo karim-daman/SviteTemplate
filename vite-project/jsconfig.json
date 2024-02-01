@@ -29,7 +29,9 @@
        "$lib/*": ["src/lib/*"],
        "$utils/*": ["src/utils/*"],
        "$stores/*": ["src/stores/*"],
-       "$assets/*": ["src/assets/*"]
+       "$assets/*": ["src/assets/*"],
+       "$icons/*": ["public/icons/*"],
+       "$components/*":["src/components/*"]
      },
   },
   /**
