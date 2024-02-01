@@ -20,9 +20,9 @@
 
 <button class="press" on:click={toggle}>
   {#if dark}
-    ☀️
+    <img class="w-4" src="sun.svg" alt="" />
   {:else}
-    🌑
+    <img class="w-4" src="moon.svg" alt="" />
   {/if}
 </button>
 

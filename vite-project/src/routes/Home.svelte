@@ -4,7 +4,7 @@
   import ThemeSelect from "$lib/ThemeSelect.svelte";
 </script>
 
-<LanguageSelect />
+<!-- <LanguageSelect /> -->
 
 <h1 class="p-5 m-5 bg-black rounded-md text-white">
   {@html $translation("greeting")} your site is live! <br />
