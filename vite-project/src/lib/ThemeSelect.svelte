@@ -18,7 +18,7 @@
   });
 </script>
 
-<button class="press" on:click={toggle}>
+<button class="press rounded-full" on:click={toggle}>
   {#if dark}
     <img class="w-4" src="sun.svg" alt="" />
   {:else}
@@ -30,8 +30,6 @@
   button {
     background-color: #f76027;
     color: white;
-    border: none;
-    border-radius: 4px;
     padding: 0.5rem;
     text-transform: uppercase;
   }
