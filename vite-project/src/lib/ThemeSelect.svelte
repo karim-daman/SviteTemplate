@@ -1,10 +1,13 @@
 <script>
+  import { isDarkTheme } from "$stores/AppStore";
+
   let dark = false;
 
   function toggle() {
     dark = !dark;
     window.document.body.classList.toggle("dark-mode", dark);
     localStorage.setItem("darkMode", dark ? "on" : "off"); // Save dark mode state to local storage
+    $isDarkTheme = dark;
   }
 
   // Load dark mode state from local storage on component mount
