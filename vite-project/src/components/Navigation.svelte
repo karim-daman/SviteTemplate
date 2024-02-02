@@ -21,6 +21,6 @@
   <ModalAuthentication />
 </nav>
 <nav class="h-8 bg-slate-200 w-full flex flex-row-reverse pr-4">
-  <ThemeSelect />
   <LanguageSelect />
+  <ThemeSelect />
 </nav>

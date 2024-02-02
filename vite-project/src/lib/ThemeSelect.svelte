@@ -18,24 +18,24 @@
   });
 </script>
 
-<button class="press rounded-full" on:click={toggle}>
+<button class="press rounded-full w-5 h-5 p-0.5 mt-1.5 bg-yellow-400" on:click={toggle}>
   {#if dark}
-    <img class="w-4" src="sun.svg" alt="" />
+    <img class="" src="sun.svg" alt="" />
   {:else}
-    <img class="w-4" src="moon.svg" alt="" />
+    <img class="" src="moon.svg" alt="" />
   {/if}
 </button>
 
 <style>
   button {
-    background-color: #f76027;
+    background-color: #000000;
     color: white;
-    padding: 0.5rem;
+    /* padding: 0.5rem; */
     text-transform: uppercase;
   }
 
   :global(body.dark-mode) button {
-    background-color: #0084f6;
+    background-color: #000000;
     color: white;
   }
 
