@@ -40,12 +40,12 @@
   class="flex items-center justify-center press">
   <img src="flag_icons/{selectedLanguage}.svg" class="rounded-full w-6 p-0.5" alt="" />
 </button>
-<div class="absolute mt-8 mx-1 {isDropdownOpen ? 'block' : 'hidden'} top-16 z-10 bg-yellow-500 p-0.5 divide-gray-100 rounded-lg shadow w-24">
+<div class="absolute mt-12 mx-1 {isDropdownOpen ? 'block' : 'hidden'} top-16 z-10 bg-white p-0.5 divide-gray-100 rounded-lg shadow w-24">
   {#each locales as l}
     {#if l != selectedLanguage}
       <button on:click={() => handleButtonClick(l)} class="w-full hover:bg-black hover:text-white hover:rounded-md p-0.5 press flex px-2 py-0.5">
         <div class=" text-xs text-black hover:text-white flex">
-          <img src={`flag_icons/${l}.svg`} class="rounded-full w-4 mr-4" alt="" />
+          <img src={`flag_icons/${l}.svg`} class=" rounded-full w-4 mr-4" alt="" />
           {l}
         </div>
       </button>

@@ -5,9 +5,8 @@
   import { isDarkTheme } from "$stores/AppStore";
 </script>
 
-<nav class=" flex m-auto w-full h-16">
+<!-- <nav class=" flex m-auto w-full h-16">
   <div class="w-1/6 content-center flex items-center justify-center">
-    <!-- <img src="logo.png" class="h-10" alt="" /> -->
     Logo
   </div>
   <div class="flex-auto">
@@ -20,8 +19,24 @@
     </div>
   </div>
   <ModalAuthentication />
-</nav>
-<nav class="h-8 {$isDarkTheme ? 'bg-[#282727]' : 'bg-slate-100'}  w-full flex flex-row-reverse pr-4">
-  <LanguageSelect />
-  <ThemeSelect />
-</nav>
+</nav> -->
+
+<header class="text-gray-600 body-font">
+  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+    <a href="#/" class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+      <span class="ml-3 text-xl">Logo</span>
+    </a>
+    <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+      <a href="#/" class="mr-5 hover:text-gray-900">Link</a>
+      <a href="#/" class="mr-5 hover:text-gray-900">Link</a>
+      <a href="#/" class="mr-5 hover:text-gray-900">Link</a>
+      <a href="#/" class="mr-5 hover:text-gray-900">Link</a>
+    </nav>
+    <ModalAuthentication />
+  </div>
+
+  <nav class="h-8 {$isDarkTheme ? 'bg-[#282727]' : 'bg-slate-100'}   flex flex-row-reverse pr-4">
+    <LanguageSelect />
+    <ThemeSelect />
+  </nav>
+</header>

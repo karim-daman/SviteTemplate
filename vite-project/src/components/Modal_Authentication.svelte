@@ -17,7 +17,7 @@
     else authModalOpen = !authModalOpen;
   }}
   class="w-1/6 flex items-center justify-center press">
-  <img src="avatar.svg" class="h-10 bg-white border rounded-full" alt="" />
+  <img src="avatar.svg" class="h-10 border bg-white rounded-full" alt="" />
   <div class="absolute {avatarDropDownOpen ? 'block' : 'hidden'} top-16 z-10 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
     <div class="px-4 py-3 text-sm text-gray-900 dark:text-white">
       <div class="font-medium">Pro User</div>

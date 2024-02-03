@@ -1,14 +1,18 @@
 export default {
   English: {
-    greeting: "Hello!",
+    greeting: "Hello, your site is live!",
     message: "This is the English version.",
   },
   Français: {
-    greeting: "Bonjour!",
+    greeting: "Bonjour, votre site est en ligne!",
     message: "Ceci est la version française.",
   },
   Español: {
-    greeting: "Hola!",
+    greeting: "Hola, ¡tu sitio ya está activo!",
     message: "Esta es la versión española.",
+  },
+  German: {
+    greeting: "Hallo, Ihre Website ist live!",
+    message: "Dies ist die deutsche Fassung.",
   },
 };
